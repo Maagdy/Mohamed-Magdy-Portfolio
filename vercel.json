@@ -1,11 +1,3 @@
 {
-  "headers": [
-    {
-      "source": "/(.*)\\.pdf",
-      "headers": [
-        { "key": "Content-Type", "value": "application/pdf" },
-        { "key": "Content-Disposition", "value": "inline" }
-      ]
-    }
-  ]
+  "rewrites": [{ "source": "/((?!.*\\.pdf$).*)", "destination": "/index.html" }]
 }
