@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <title>Mohamed Magdy | Full Stack & Mobile Developer</title>
+    <meta name="description" content="Mohamed Magdy — Full Stack & Mobile Developer from Egypt. Building web apps with React & Next.js, mobile apps with React Native, and backend systems with Node.js & MongoDB." />
+    <meta name="keywords" content="Mohamed Magdy, Full Stack Developer, React Developer, React Native, Node.js, Next.js, MongoDB, TypeScript, Portfolio, Frontend, Mobile Developer, MERN Stack, Egypt, محمد مجدي, مطور" />
+    <meta name="author" content="Mohamed Magdy" />
+    <meta name="theme-color" content="#7c3aed" />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mohamed Magdy | Full Stack & Mobile Developer" />
+    <meta property="og:description" content="Full Stack & Mobile Developer building modern web and mobile applications with React, React Native, Node.js, and the MERN stack." />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mohamed Magdy | Full Stack & Mobile Developer" />
+    <meta name="twitter:description" content="Full Stack & Mobile Developer building modern web and mobile applications with React, React Native, Node.js, and the MERN stack." />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Inter:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script>
+      (function() {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'light') {
+          document.documentElement.classList.remove('dark');
+        }
+        var lang = localStorage.getItem('i18nextLng') || 'en';
+        if (lang.startsWith('ar')) {
+          document.documentElement.setAttribute('lang', 'ar');
+          document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+          document.documentElement.setAttribute('lang', 'en');
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

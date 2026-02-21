@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "tagline": "I craft beautiful, performant web experiences with modern technologies. Passionate about clean code, smooth animations, and pixel-perfect designs.",
+    "downloadCv": "Download CV",
+    "viewCv": "View CV",
+    "viewProjects": "View Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know me better"
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "The tools and technologies I work with"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "A selection of my recent work",
+    "repo": "Repo",
+    "liveDemo": "Live Demo",
+    "youreHere": "You're here!"
+  },
+  "experience": {
+    "title": "Experience & Education",
+    "subtitle": "My journey and qualifications"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind? Let's work together",
+    "email": "Email",
+    "location": "Location",
+    "cta": "I'm always open to new opportunities and interesting projects. Feel free to reach out!",
+    "sendEmail": "Send me an email"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "a11y": {
+    "toggleMenu": "Toggle menu",
+    "toggleTheme": "Toggle theme",
+    "scrollToTop": "Scroll to top",
+    "switchToArabic": "Switch to Arabic",
+    "switchToEnglish": "Switch to English",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "viewSource": "View source code",
+    "viewLive": "View live demo"
+  },
+  "stats": {
+    "projectsCompleted": "Projects Completed",
+    "technologies": "Technologies",
+    "githubRepos": "GitHub Repos"
+  },
+  "meta": {
+    "title": "Mohamed Magdy | Full Stack & Mobile Developer",
+    "description": "Mohamed Magdy — Full Stack & Mobile Developer from Egypt. Building web apps with React & Next.js, mobile apps with React Native, and backend systems with Node.js & MongoDB."
+  }
+}
