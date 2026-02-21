@@ -46,7 +46,7 @@ src/
 │   ├── layout/       # Navbar, Footer, ScrollToTop
 │   ├── sections/     # Hero, About, Skills, Projects, Experience, Contact
 │   └── ui/           # Button, Card, Toggle, PdfViewer
-├── data/             # Static data (personalInfo, projects, skills, experience)
+├── data/             # Static data (personalInfo, projects, skills, experiences)
 ├── hooks/            # useTheme, useLanguage, useActiveSection
 ├── locales/          # i18n translations (en.json, ar.json)
 ├── utils/            # Helper utilities
