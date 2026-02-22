@@ -14,9 +14,11 @@ export default function Projects() {
           subtitle={t("projects.subtitle")}
         />
 
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8">
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} index={index} />
+            <div key={index} className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)]">
+              <ProjectCard project={project} index={index} />
+            </div>
           ))}
         </div>
       </div>

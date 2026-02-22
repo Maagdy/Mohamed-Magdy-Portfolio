@@ -39,7 +39,7 @@ export default function Hero() {
         </h1>
 
         <div
-          className="text-xl sm:text-2xl md:text-3xl font-semibold text-surface-600 dark:text-surface-400 mb-8 h-10 animate-[hero-up_0.5s_ease-out_0.3s_both]"
+          className="text-xl sm:text-2xl md:text-3xl font-semibold text-surface-600 dark:text-surface-400 mb-6 md:mb-8 min-h-[2.5rem] sm:min-h-[2.75rem] md:min-h-[3rem] animate-[hero-up_0.5s_ease-out_0.3s_both]"
         >
           <TypeAnimation
             key={language}
@@ -52,7 +52,7 @@ export default function Hero() {
         </div>
 
         <p
-          className="max-w-2xl mx-auto text-surface-500 dark:text-surface-400 mb-10 text-sm md:text-base leading-relaxed animate-[fade-in_0.5s_ease-out_0.5s_both]"
+          className="max-w-2xl mx-auto text-surface-500 dark:text-surface-400 mb-8 md:mb-10 text-sm md:text-base leading-relaxed animate-[fade-in_0.5s_ease-out_0.5s_both]"
         >
           {t("hero.tagline")}
         </p>
@@ -76,7 +76,7 @@ export default function Hero() {
         </div>
 
         <div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-[fade-in_0.5s_ease-out_1.2s_both]"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex animate-[fade-in_0.5s_ease-out_1.2s_both]"
         >
           <div
             className="w-6 h-10 rounded-full border-2 border-surface-400 dark:border-surface-600 flex items-start justify-center pt-2 animate-[scroll-hint_1.5s_ease-in-out_infinite]"

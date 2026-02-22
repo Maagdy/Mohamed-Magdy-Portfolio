@@ -27,16 +27,16 @@ export default function Contact() {
                 <motion.a
                   href={`mailto:${personalInfo.email}`}
                   whileHover={{ y: -4 }}
-                  className="flex items-center gap-4 p-5 rounded-2xl bg-white dark:bg-surface-800/60 border border-surface-200 dark:border-surface-700/50 hover:border-primary-400 dark:hover:border-primary-500/50 shadow-sm hover:shadow-lg transition-all duration-300"
+                  className="flex items-center gap-4 p-4 sm:p-5 rounded-2xl bg-white dark:bg-surface-800/60 border border-surface-200 dark:border-surface-700/50 hover:border-primary-400 dark:hover:border-primary-500/50 shadow-sm hover:shadow-lg transition-all duration-300"
                 >
                   <div className="p-3 rounded-xl bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400">
                     <FiMail size={22} />
                   </div>
-                  <div className="text-start">
+                  <div className="text-start min-w-0">
                     <p className="text-xs text-surface-500 dark:text-surface-400">
                       {t("contact.email")}
                     </p>
-                    <p className="text-sm font-medium text-surface-800 dark:text-surface-200">
+                    <p className="text-sm font-medium text-surface-800 dark:text-surface-200 break-all">
                       {personalInfo.email}
                     </p>
                   </div>
@@ -44,7 +44,7 @@ export default function Contact() {
 
                 <motion.div
                   whileHover={{ y: -4 }}
-                  className="flex items-center gap-4 p-5 rounded-2xl bg-white dark:bg-surface-800/60 border border-surface-200 dark:border-surface-700/50 shadow-sm"
+                  className="flex items-center gap-4 p-4 sm:p-5 rounded-2xl bg-white dark:bg-surface-800/60 border border-surface-200 dark:border-surface-700/50 shadow-sm"
                 >
                   <div className="p-3 rounded-xl bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400">
                     <FiMapPin size={22} />

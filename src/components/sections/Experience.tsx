@@ -20,7 +20,7 @@ export default function Experience() {
   });
 
   return (
-    <section id="experience" className="relative py-20 md:py-28">
+    <section id="experience" className="relative py-20 md:py-28 overflow-x-clip">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeading
           title={t("experience.title")}
@@ -35,13 +35,13 @@ export default function Experience() {
 
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-surface-200 dark:bg-surface-800 -translate-x-1/2" />
 
-          <div className="md:hidden absolute start-4 top-0 bottom-0 w-0.5 bg-surface-200 dark:bg-surface-800" />
+          <div className="md:hidden absolute start-5 top-0 bottom-0 w-0.5 bg-surface-200 dark:bg-surface-800" />
           <motion.div
             style={{ scaleY, transformOrigin: "top" }}
-            className="md:hidden absolute start-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-primary-700"
+            className="md:hidden absolute start-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-primary-700"
           />
 
-          <div className="space-y-12 ps-12 md:ps-0">
+          <div className="space-y-8 md:space-y-12 ps-10 md:ps-0">
             {experience.map((item, index) => (
               <TimelineItem key={index} item={item} index={index} />
             ))}

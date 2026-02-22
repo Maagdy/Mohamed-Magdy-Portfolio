@@ -43,7 +43,7 @@ export default function Navbar({ isDark, toggleTheme, activeSection }: NavbarPro
             className="cursor-pointer"
           >
             <span
-              className="text-2xl font-bold transition-transform hover:scale-105 inline-block"
+              className="text-xl sm:text-2xl font-bold transition-transform hover:scale-105 inline-block"
               style={{ fontFamily: isRTL ? "'Cairo', sans-serif" : "'Sacramento', cursive" }}
             >
               <span className="bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">

@@ -2,17 +2,6 @@ import type { Project } from "../types";
 
 export const projects: Project[] = [
   {
-    title: { en: "This Portfolio", ar: "هذا الموقع" },
-    description: {
-      en: "Wait... you're already here. But sure, click Live Demo if you want to see it again.",
-      ar: "انتظر... أنت هنا بالفعل. لكن بالتأكيد، اضغط على العرض المباشر إذا أردت رؤيته مرة أخرى.",
-    },
-    tags: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-    image: "/projects/mohamed-magdy-portfolio.webp",
-    github: "https://github.com/Maagdy/Mohamed-Magdy-Portfolio",
-    live: "#hero",
-  },
-  {
     title: { en: "Yaqeen", ar: "يقين" },
     description: {
       en: "A comprehensive Islamic knowledge platform with multiple Quran reading modes, 100+ audio reciters, tafsir, hadith collections, prayer times, bookmarks, and global search. Fully bilingual Arabic/English with RTL support and dark/light themes.",
@@ -29,6 +18,17 @@ export const projects: Project[] = [
     image: "/projects/yaqeen.webp",
     github: "https://github.com/Maagdy/yaqeen",
     live: "https://yaqeen.site",
+  },
+  {
+    title: { en: "This Portfolio", ar: "هذا الموقع" },
+    description: {
+      en: "Wait... you're already here. But sure, click Live Demo if you want to see it again.",
+      ar: "انتظر... أنت هنا بالفعل. لكن بالتأكيد، اضغط على العرض المباشر إذا أردت رؤيته مرة أخرى.",
+    },
+    tags: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+    image: "/projects/mohamed-magdy-portfolio.webp",
+    github: "https://github.com/Maagdy/Mohamed-Magdy-Portfolio",
+    live: "#hero",
   },
   {
     title: { en: "Smartwatches", ar: "ساعات ذكية" },

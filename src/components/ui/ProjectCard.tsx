@@ -19,7 +19,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       transition={{ duration: 0.5, delay: index * 0.15 }}
       className="group relative rounded-2xl overflow-hidden bg-white dark:bg-surface-800/60 border border-surface-200 dark:border-surface-700/50 hover:border-primary-400 dark:hover:border-primary-500/50 shadow-sm hover:shadow-xl hover:shadow-primary-500/10 transition-all duration-500"
     >
-      <div className="relative h-48 md:h-56 overflow-hidden bg-gradient-to-br from-primary-500/20 to-primary-700/20">
+      <div className="relative h-40 sm:h-48 md:h-56 overflow-hidden bg-gradient-to-br from-primary-500/20 to-primary-700/20">
         {project.image ? (
           <img
             src={project.image}
@@ -66,7 +66,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
       </div>
 
-      <div className="p-5">
+      <div className="p-4 sm:p-5">
         <h3 className="text-lg font-bold text-surface-900 dark:text-white mb-2">
           {title}
         </h3>
@@ -77,7 +77,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-3 py-1 text-xs font-medium rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300"
+              className="px-2.5 py-0.5 sm:px-3 sm:py-1 text-xs font-medium rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300"
             >
               {tag}
             </span>
@@ -90,7 +90,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg border border-surface-300 dark:border-surface-600 text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-surface-700/50 transition-colors"
+              className="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 text-sm font-medium rounded-lg border border-surface-300 dark:border-surface-600 text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-surface-700/50 transition-colors"
             >
               <FiGithub size={16} />
               {t("projects.repo")}
@@ -100,7 +100,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             <a
               href={project.live}
               {...(project.live.startsWith("#") ? {} : { target: "_blank", rel: "noopener noreferrer" })}
-              className="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg bg-primary-600 text-white hover:bg-primary-700 transition-colors"
+              className="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 text-sm font-medium rounded-lg bg-primary-600 text-white hover:bg-primary-700 transition-colors"
             >
               <FiExternalLink size={16} />
               {project.live.startsWith("#") ? t("projects.youreHere") : t("projects.liveDemo")}

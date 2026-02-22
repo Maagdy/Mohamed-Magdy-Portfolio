@@ -3,7 +3,7 @@ import type { SectionHeadingProps } from "../../types";
 
 export default function SectionHeading({ title, subtitle }: SectionHeadingProps) {
   return (
-    <div className="text-center mb-16">
+    <div className="text-center mb-10 md:mb-16">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

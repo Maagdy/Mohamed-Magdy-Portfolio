@@ -9,7 +9,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 text-sm md:text-base hover:scale-105 active:scale-95";
+    "inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg font-medium transition-all duration-300 text-sm md:text-base hover:scale-105 active:scale-95";
 
   const variants = {
     primary:

@@ -10,12 +10,12 @@ export default function TimelineItem({ item, index }: TimelineItemProps) {
   const Icon = item.type === "experience" ? FiBriefcase : FiBookOpen;
 
   const slideX = isRTL
-    ? isLeft ? 40 : -40
-    : isLeft ? -40 : 40;
+    ? isLeft ? 30 : -30
+    : isLeft ? -30 : 30;
 
   return (
     <div
-      className={`flex items-start gap-6 md:gap-0 relative ${
+      className={`flex items-start gap-4 md:gap-0 relative ${
         isLeft ? "md:flex-row" : "md:flex-row-reverse"
       }`}
     >
@@ -26,11 +26,11 @@ export default function TimelineItem({ item, index }: TimelineItemProps) {
         transition={{ duration: 0.5, delay: 0.2 }}
         className={`flex-1 ${isLeft ? "md:pe-12 md:text-end" : "md:ps-12"}`}
       >
-        <div className="p-5 rounded-2xl bg-white dark:bg-surface-800/60 border border-surface-200 dark:border-surface-700/50 hover:border-primary-400 dark:hover:border-primary-500/50 shadow-sm hover:shadow-lg transition-all duration-300">
+        <div className="p-3 sm:p-4 md:p-5 rounded-2xl bg-white dark:bg-surface-800/60 border border-surface-200 dark:border-surface-700/50 hover:border-primary-400 dark:hover:border-primary-500/50 shadow-sm hover:shadow-lg transition-all duration-300">
           <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 mb-3">
             {localized(item.period, language)}
           </span>
-          <h3 className="text-lg font-bold text-surface-900 dark:text-white mb-1">
+          <h3 className="text-base sm:text-lg font-bold text-surface-900 dark:text-white mb-1">
             {localized(item.title, language)}
           </h3>
           <p className="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
@@ -54,15 +54,15 @@ export default function TimelineItem({ item, index }: TimelineItemProps) {
         </motion.div>
       </div>
 
-      <div className="md:hidden absolute start-0 top-5">
+      <div className="md:hidden absolute -start-8 top-5">
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.3 }}
-          className="w-8 h-8 rounded-full bg-primary-500 flex items-center justify-center text-white shadow-lg shadow-primary-500/30 z-10"
+          className="w-7 h-7 rounded-full bg-primary-500 flex items-center justify-center text-white shadow-lg shadow-primary-500/30 z-10"
         >
-          <Icon size={14} />
+          <Icon size={12} />
         </motion.div>
       </div>
 

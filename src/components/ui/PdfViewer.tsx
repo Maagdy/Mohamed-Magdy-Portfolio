@@ -33,7 +33,8 @@ export default function PdfViewer({ src, isOpen, onClose }: PdfViewerProps) {
       onClick={onClose}
     >
       <div
-        className="relative w-[95vw] h-[90vh] max-w-5xl bg-white dark:bg-surface-900 rounded-xl shadow-2xl overflow-hidden animate-[hero-up_0.3s_ease-out]"
+        className="absolute inset-0 max-w-full md:relative md:inset-auto md:w-[95vw] md:h-[90vh] md:max-w-5xl bg-white dark:bg-surface-900 rounded-none md:rounded-xl shadow-2xl overflow-hidden animate-[fade-in_0.2s_ease-out]"
+        style={{ touchAction: "none", overscrollBehavior: "contain" }}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between px-4 py-3 bg-surface-100 dark:bg-surface-800 border-b border-surface-200 dark:border-surface-700">
@@ -62,7 +63,7 @@ export default function PdfViewer({ src, isOpen, onClose }: PdfViewerProps) {
         <iframe
           src={src}
           title="CV"
-          className="w-full h-[calc(90vh-52px)]"
+          className="w-full h-[calc(100%-52px)] md:h-[calc(90vh-52px)]"
         />
       </div>
     </div>

@@ -14,7 +14,14 @@ const Projects = lazy(() => import("./components/sections/Projects"));
 const Experience = lazy(() => import("./components/sections/Experience"));
 const Contact = lazy(() => import("./components/sections/Contact"));
 
-const sectionIds = ["hero", "about", "skills", "projects", "experience", "contact"];
+const sectionIds = [
+  "hero",
+  "about",
+  "skills",
+  "projects",
+  "experience",
+  "contact",
+];
 
 export default function App() {
   const { isDark, toggleTheme } = useTheme();
@@ -24,7 +31,9 @@ export default function App() {
 
   useEffect(() => {
     document.title = t("meta.title");
-    document.querySelector('meta[name="description"]')?.setAttribute("content", t("meta.description"));
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", t("meta.description"));
   }, [language, t]);
 
   return (

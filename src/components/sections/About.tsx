@@ -35,7 +35,7 @@ function AnimatedCounter({ value, suffix = "", language }: AnimatedCounterProps)
   }, [isInView, value]);
 
   return (
-    <span ref={ref} className="text-3xl md:text-4xl font-bold text-primary-500">
+    <span ref={ref} className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary-500">
       {formatNumber(count, language)}
       {suffix}
     </span>
@@ -49,14 +49,14 @@ export default function About() {
   const location = localized(personalInfo.location, language);
 
   return (
-    <section id="about" className="relative py-20 md:py-28">
+    <section id="about" className="relative py-20 md:py-28 overflow-x-clip">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeading
           title={t("about.title")}
           subtitle={t("about.subtitle")}
         />
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
           <ScrollReveal direction="left">
             <div className="space-y-4">
               {bio.map((paragraph, i) => (
@@ -82,7 +82,7 @@ export default function About() {
           </ScrollReveal>
 
           <ScrollReveal direction="right">
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               {stats.map((stat, i) => (
                 <motion.div
                   key={stat.labelKey}
@@ -90,7 +90,7 @@ export default function About() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.15, duration: 0.4 }}
-                  className="flex flex-col items-center text-center p-5 rounded-2xl bg-white dark:bg-surface-800/60 border border-surface-200 dark:border-surface-700/50 shadow-sm"
+                  className="w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] sm:flex-1 flex flex-col items-center text-center p-3 sm:p-5 rounded-2xl bg-white dark:bg-surface-800/60 border border-surface-200 dark:border-surface-700/50 shadow-sm"
                 >
                   <AnimatedCounter value={stat.value} suffix={stat.suffix} language={language} />
                   <span className="text-xs md:text-sm text-surface-500 dark:text-surface-400 mt-2">
